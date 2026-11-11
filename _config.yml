@@ -1,0 +1,23 @@
+
+title: San Diego Flight Delay Analysis
+description: Exploring flight delays, airport operations, and predictive modeling at San Diego International Airport.
+url: ""
+baseurl: ""
+
+markdown: kramdown
+theme: null
+
+plugins:
+  - jekyll-feed
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
