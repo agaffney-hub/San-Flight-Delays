@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+
+      <a class="site-brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark">SAN</span>
+        <span class="brand-name">
+          <strong>Flight Delay Analysis</strong>
+          <small>San Diego International Airport</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/overview/' | relative_url }}">Project</a>
+        <a href="{{ '/data-sources/' | relative_url }}">Data</a>
+        <a href="{{ '/methodology/' | relative_url }}">Methodology</a>
+        <a href="{{ '/results/' | relative_url }}">Results</a>
+        <a href="{{ '/team/' | relative_url }}">Team</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div>
+        <strong>San Diego Flight Delay Analysis</strong>
+        <p>Exploring flight operations through data analytics.</p>
+      </div>
+
+      <p class="footer-credit">SD Crew · 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
