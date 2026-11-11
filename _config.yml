@@ -1,8 +1,8 @@
 
 title: San Diego Flight Delay Analysis
 description: Exploring flight delays, airport operations, and predictive modeling at San Diego International Airport.
-url: ""
-baseurl: ""
+url: "https://agaffney-hub.github.io"
+baseurl: "/San-Flight-Delays"
 
 markdown: kramdown
 theme: null
