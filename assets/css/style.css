@@ -156,6 +156,16 @@ img {
   margin-right: auto;
 }
 
+#main-content > h1,
+#main-content > h2,
+#main-content > p {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 /* 4. Reusable sections */
 
 .section-label {
